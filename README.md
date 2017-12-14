@@ -35,7 +35,7 @@ JavaCode:
         banner.setOnItemClickListener(new Banner.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-
+                Toast.makeText(mContext, mData.get(position).getTips(), Toast.LENGTH_LONG).show();
             }
         });
 
