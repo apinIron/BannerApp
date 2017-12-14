@@ -8,11 +8,11 @@ public class BannerModel {
 
     private String imageUrl;
 
-    private String mTips;
+    private String tips;
 
     public BannerModel(String tips,String imageUrl) {
         this.imageUrl = imageUrl;
-        this.mTips = tips;
+        this.tips = tips;
     }
 
     public String getImageUrl() {
@@ -23,11 +23,11 @@ public class BannerModel {
         this.imageUrl = imageUrl;
     }
 
-    public String getmTips() {
-        return mTips;
+    public String getTips() {
+        return tips;
     }
 
-    public void setmTips(String mTips) {
-        this.mTips = mTips;
+    public void setTips(String tips) {
+        this.tips = tips;
     }
 }

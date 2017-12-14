@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.iron.view.banner.Banner;
 import com.iron.view.banner.BannerAdapter;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 View bannerView = LayoutInflater.from(mContext).inflate(R.layout.item_banner, null, false);
                 ImageView imgBannerImage = bannerView.findViewById(R.id.img_banner);
                 TextView tvBannerTitle = bannerView.findViewById(R.id.tv_banner);
-                tvBannerTitle.setText(bannerModel.getmTips());
+                tvBannerTitle.setText(bannerModel.getTips());
                 Picasso.with(mContext).load(bannerModel.getImageUrl()).fit().centerCrop().into
                         (imgBannerImage);
                 return bannerView;
@@ -86,10 +87,16 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             protected void bindTips(TextView textView, int position, BannerModel bannerModel) {
-                textView.setText(bannerModel.getmTips());
+                textView.setText(bannerModel.getTips());
             }
         };
 
         imageBanner.setAdapter(iAdapter).startAutoPlay();
+        imageBanner.setOnItemClickListener(new Banner.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Toast.makeText(mContext, mData.get(position).getTips(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

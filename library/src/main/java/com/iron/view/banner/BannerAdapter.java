@@ -28,7 +28,7 @@ public abstract class BannerAdapter<T> extends PagerAdapter {
         mData = data;
     }
 
-    public void bindBanner(Banner banner){
+    public void bindBanner(Banner banner) {
         mBanner = banner;
     }
 

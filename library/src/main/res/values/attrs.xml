@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="Banner">
+        <!-- 圆点指示器的边距设置 -->
         <attr name="dot_marginBottom" format="dimension"/>
         <attr name="dot_marginTop" format="dimension"/>
         <attr name="dot_marginLeft" format="dimension"/>
         <attr name="dot_marginRight" format="dimension"/>
+        <!-- 圆点指示器间隔距离 -->
         <attr name="dot_interval" format="dimension"/>
+        <!-- 圆点指示器大小设置 -->
         <attr name="dot_size" format="dimension"/>
+        <!-- tips字体大小 -->
         <attr name="text_size" format="dimension"/>
+        <!-- tips字体颜色 -->
         <attr name="text_color" format="color"/>
+        <!-- 圆点指示器不同状态资源 -->
         <attr name="dot_selectedResource" format="reference"/>
         <attr name="dot_notSelectedResource" format="reference"/>
+        <!-- 圆点指示器位置 默认为 BOTTOM|CENTER_HORIZONTAL 底部居中 -->
         <attr name="dot_gravity">
             <flag name="BOTTOM" value="80"/>
             <flag name="TOP" value="48"/>
