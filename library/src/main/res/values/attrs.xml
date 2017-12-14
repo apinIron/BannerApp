@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Banner">
+        <attr name="dot_marginBottom" format="dimension"/>
+        <attr name="dot_marginTop" format="dimension"/>
+        <attr name="dot_marginLeft" format="dimension"/>
+        <attr name="dot_marginRight" format="dimension"/>
+        <attr name="dot_interval" format="dimension"/>
+        <attr name="dot_size" format="dimension"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color" format="color"/>
+        <attr name="dot_selectedResource" format="reference"/>
+        <attr name="dot_notSelectedResource" format="reference"/>
+        <attr name="dot_gravity">
+            <flag name="BOTTOM" value="80"/>
+            <flag name="TOP" value="48"/>
+            <flag name="LEFT" value="3"/>
+            <flag name="RIGHT" value="5"/>
+            <flag name="CENTER_HORIZONTAL" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
