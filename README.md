@@ -2,6 +2,11 @@
 
 ### 如何使用
 
+Gradle:
+```
+compile 'com.iron.banner:banner:1.0.0'
+```
+
 Layout XML:
 ```
     <com.iron.view.banner.Banner
@@ -41,7 +46,6 @@ JavaCode:
 
 ```
 如果集合数据发生改变调用 banner.notifyDataSetChanged() 方法使banner更新数据。
-<hr/>
 
 Banner其他自带方法：</br>
 
